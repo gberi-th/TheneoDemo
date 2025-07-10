@@ -1,0 +1,1 @@
+Places a mark on the board and retrieves the whole board and the winner (if any).

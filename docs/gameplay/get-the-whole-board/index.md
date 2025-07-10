@@ -1,0 +1,1 @@
+Retrieves the current state of the board and the winner.
