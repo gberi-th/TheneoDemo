@@ -24,11 +24,11 @@ jobs:
       - name: Update Documentation on Theneo
         uses: Theneo-Inc/api-documentation@1.8.0
         with:
-          FILE_PATH: /home/giorgi-th/Documents/vscode/TheneoDemo/tic-tac-toe-openapi-source.yaml
+          FILE_PATH: ./tic-tac-toe-openapi-source.yaml
           PROJECT_SLUG: create-from-cli
           VERSION_SLUG: v1
           WORKSPACE_SLUG: giorgisworkspace
-          SECRET: 0a4699c6-3a08-4f77-9349-bf418c9c8443
+          SECRET: ${{ secrets.THENEO_API_KEY }}
           AUTO_PUBLISH: true
           IMPORT_OPTION: merge
           PARAMETER_DESCRIPTION_MERGE_STRATEGY: keep_new
