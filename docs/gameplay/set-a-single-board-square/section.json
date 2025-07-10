@@ -1,0 +1,187 @@
+{
+  "endpoints": {
+    "method": "put",
+    "path": "/board/{row}/{column}"
+  },
+  "request": {
+    "query": [],
+    "body": [],
+    "header": [
+      {
+        "name": "Authorization",
+        "description": "",
+        "isRequired": false,
+        "value": "Basic <base64-encoded string>",
+        "valueType": "string",
+        "items": [],
+        "options": {
+          "xml": {
+            "prefix": null
+          }
+        }
+      }
+    ],
+    "path": [
+      {
+        "name": "row",
+        "description": "Board row (vertical coordinate)",
+        "isRequired": true,
+        "value": "1",
+        "valueType": "integer",
+        "items": [],
+        "options": {
+          "minimum": 1,
+          "maximum": 3,
+          "example": "1",
+          "xml": {
+            "prefix": null
+          }
+        }
+      },
+      {
+        "name": "column",
+        "description": "Board column (horizontal coordinate)",
+        "isRequired": true,
+        "value": "1",
+        "valueType": "integer",
+        "items": [],
+        "options": {
+          "minimum": 1,
+          "maximum": 3,
+          "example": "1",
+          "xml": {
+            "prefix": null
+          }
+        }
+      }
+    ],
+    "contentType": "application/json",
+    "graphqlQuery": "",
+    "codeExamples": [],
+    "_id": "687042e4fec739388c096319"
+  },
+  "responses": [
+    {
+      "name": "200",
+      "status": "OK",
+      "body": [
+        {
+          "name": "winner",
+          "description": "Winner of the game. `.` means nobody has won yet.",
+          "isRequired": false,
+          "value": ".",
+          "valueType": "string",
+          "items": [],
+          "options": {
+            "enumValue": [
+              {
+                "value": "."
+              },
+              {
+                "value": "X"
+              },
+              {
+                "value": "O"
+              }
+            ],
+            "example": ".",
+            "xml": {
+              "prefix": null
+            }
+          }
+        },
+        {
+          "name": "board",
+          "description": "",
+          "isRequired": false,
+          "value": "",
+          "valueType": "array",
+          "items": [
+            {
+              "name": "0",
+              "description": "",
+              "isRequired": false,
+              "value": "",
+              "valueType": "array",
+              "items": [
+                {
+                  "name": "0",
+                  "description": "",
+                  "isRequired": false,
+                  "value": "",
+                  "valueType": "array",
+                  "items": [],
+                  "options": {
+                    "minItems": 3,
+                    "maxItems": 3,
+                    "enumValue": [
+                      {
+                        "value": "."
+                      },
+                      {
+                        "value": "X"
+                      },
+                      {
+                        "value": "O"
+                      }
+                    ],
+                    "xml": {
+                      "prefix": null
+                    }
+                  }
+                }
+              ],
+              "options": {
+                "minItems": 3,
+                "maxItems": 3,
+                "xml": {
+                  "prefix": null
+                }
+              }
+            }
+          ],
+          "options": {
+            "minItems": 3,
+            "maxItems": 3,
+            "xml": {
+              "prefix": null
+            }
+          }
+        }
+      ],
+      "statusCode": 200,
+      "description": "OK",
+      "contentType": "application/json"
+    },
+    {
+      "name": "illegalCoordinates",
+      "status": "Bad Request",
+      "body": [
+        {
+          "name": "response",
+          "description": "",
+          "isRequired": false,
+          "value": "Invalid Mark (X or O).",
+          "valueType": "string",
+          "items": [],
+          "options": {
+            "xml": {
+              "prefix": null
+            }
+          }
+        }
+      ],
+      "statusCode": 400,
+      "description": "The provided parameters are incorrect",
+      "contentType": "text/html"
+    }
+  ],
+  "showBaseUrl": false,
+  "showLanguageBox": false,
+  "showRequestDescription": true,
+  "showResponseDescription": true,
+  "errorCodes": [],
+  "statusCodes": [],
+  "dataExample": [],
+  "endpointSummary": []
+}
