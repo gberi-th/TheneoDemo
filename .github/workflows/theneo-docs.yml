@@ -24,7 +24,7 @@ jobs:
       - name: Update Documentation on Theneo
         uses: Theneo-Inc/api-documentation@1.8.0
         with:
-          FILE_PATH: /home/giorgi-th/Documents/vscode/tic-tac-toe-openapi-source.yaml
+          FILE_PATH: /home/giorgi-th/Documents/vscode/TheneoDemo/tic-tac-toe-openapi-source.yaml
           PROJECT_SLUG: create-from-cli
           VERSION_SLUG: v1
           WORKSPACE_SLUG: giorgisworkspace
