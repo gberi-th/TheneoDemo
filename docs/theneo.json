@@ -1,0 +1,38 @@
+{
+  "id": "687034d40af672f279735220",
+  "name": "create-from-cli",
+  "lastExport": "2025-07-10T23:12:53.220Z",
+  "baseUrl": "http://example.io",
+  "sections": [
+    {
+      "name": "Tic Tac Toe",
+      "slug": "tic-tac-toe",
+      "children": [],
+      "externalPageLink": "",
+      "isNewTab": false
+    },
+    {
+      "name": "Gameplay",
+      "slug": "gameplay",
+      "children": [
+        {
+          "name": "Get the whole board",
+          "slug": "gameplay/get-the-whole-board",
+          "children": []
+        },
+        {
+          "name": "Get a single board square",
+          "slug": "gameplay/get-a-single-board-square",
+          "children": []
+        },
+        {
+          "name": "Set a single board square",
+          "slug": "gameplay/set-a-single-board-square",
+          "children": []
+        }
+      ],
+      "externalPageLink": "",
+      "isNewTab": false
+    }
+  ]
+}

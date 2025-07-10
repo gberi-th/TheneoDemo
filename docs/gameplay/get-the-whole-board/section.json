@@ -1,0 +1,118 @@
+{
+  "endpoints": {
+    "method": "get",
+    "path": "/board"
+  },
+  "request": {
+    "query": [],
+    "body": [],
+    "header": [],
+    "path": [],
+    "contentType": "",
+    "graphqlQuery": "",
+    "codeExamples": [],
+    "_id": "687042e4fec739388c096309"
+  },
+  "responses": [
+    {
+      "name": "200",
+      "status": "OK",
+      "body": [
+        {
+          "name": "winner",
+          "description": "Winner of the game. `.` means nobody has won yet.",
+          "isRequired": false,
+          "value": ".",
+          "valueType": "string",
+          "items": [],
+          "options": {
+            "enumValue": [
+              {
+                "value": "."
+              },
+              {
+                "value": "X"
+              },
+              {
+                "value": "O"
+              }
+            ],
+            "example": ".",
+            "xml": {
+              "prefix": null
+            }
+          }
+        },
+        {
+          "name": "board",
+          "description": "",
+          "isRequired": false,
+          "value": "",
+          "valueType": "array",
+          "items": [
+            {
+              "name": "0",
+              "description": "",
+              "isRequired": false,
+              "value": "",
+              "valueType": "array",
+              "items": [
+                {
+                  "name": "0",
+                  "description": "",
+                  "isRequired": false,
+                  "value": "",
+                  "valueType": "array",
+                  "items": [],
+                  "options": {
+                    "minItems": 3,
+                    "maxItems": 3,
+                    "enumValue": [
+                      {
+                        "value": "."
+                      },
+                      {
+                        "value": "X"
+                      },
+                      {
+                        "value": "O"
+                      }
+                    ],
+                    "xml": {
+                      "prefix": null
+                    }
+                  }
+                }
+              ],
+              "options": {
+                "minItems": 3,
+                "maxItems": 3,
+                "xml": {
+                  "prefix": null
+                }
+              }
+            }
+          ],
+          "options": {
+            "minItems": 3,
+            "maxItems": 3,
+            "xml": {
+              "prefix": null
+            }
+          }
+        }
+      ],
+      "statusCode": 200,
+      "description": "OK",
+      "contentType": "application/json"
+    }
+  ],
+  "showBaseUrl": false,
+  "showLanguageBox": false,
+  "showRequestDescription": true,
+  "showResponseDescription": true,
+  "errorCodes": [],
+  "statusCodes": [],
+  "dataExample": [],
+  "endpointSummary": []
+}

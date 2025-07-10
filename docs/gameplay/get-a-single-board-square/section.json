@@ -1,0 +1,117 @@
+{
+  "endpoints": {
+    "method": "get",
+    "path": "/board/{row}/{column}"
+  },
+  "request": {
+    "query": [],
+    "body": [],
+    "header": [
+      {
+        "name": "Authorization",
+        "description": "",
+        "isRequired": false,
+        "value": "Basic <base64-encoded string>",
+        "valueType": "string",
+        "items": [],
+        "options": {
+          "xml": {
+            "prefix": null
+          }
+        }
+      }
+    ],
+    "path": [
+      {
+        "name": "row",
+        "description": "Board row (vertical coordinate)",
+        "isRequired": true,
+        "value": "1",
+        "valueType": "integer",
+        "items": [],
+        "options": {
+          "minimum": 1,
+          "maximum": 3,
+          "example": "1",
+          "xml": {
+            "prefix": null
+          }
+        }
+      },
+      {
+        "name": "column",
+        "description": "Board column (horizontal coordinate)",
+        "isRequired": true,
+        "value": "1",
+        "valueType": "integer",
+        "items": [],
+        "options": {
+          "minimum": 1,
+          "maximum": 3,
+          "example": "1",
+          "xml": {
+            "prefix": null
+          }
+        }
+      }
+    ],
+    "contentType": "",
+    "graphqlQuery": "",
+    "codeExamples": [],
+    "_id": "687042e4fec739388c09630e"
+  },
+  "responses": [
+    {
+      "name": "OK",
+      "status": "OK",
+      "body": [
+        {
+          "name": "response",
+          "description": "",
+          "isRequired": false,
+          "value": ".",
+          "valueType": "string",
+          "items": [],
+          "options": {
+            "xml": {
+              "prefix": null
+            }
+          }
+        }
+      ],
+      "statusCode": 200,
+      "description": "OK",
+      "contentType": "application/json"
+    },
+    {
+      "name": "Bad Request",
+      "status": "Bad Request",
+      "body": [
+        {
+          "name": "response",
+          "description": "",
+          "isRequired": false,
+          "value": "Illegal coordinates",
+          "valueType": "string",
+          "items": [],
+          "options": {
+            "xml": {
+              "prefix": null
+            }
+          }
+        }
+      ],
+      "statusCode": 400,
+      "description": "The provided parameters are incorrect",
+      "contentType": "text/html"
+    }
+  ],
+  "showBaseUrl": false,
+  "showLanguageBox": false,
+  "showRequestDescription": true,
+  "showResponseDescription": true,
+  "errorCodes": [],
+  "statusCodes": [],
+  "dataExample": [],
+  "endpointSummary": []
+}
