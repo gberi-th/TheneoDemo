@@ -28,7 +28,7 @@ jobs:
           PROJECT_SLUG: create-from-cli
           VERSION_SLUG: v1
           WORKSPACE_SLUG: giorgisworkspace
-          SECRET: ${{ secrets.THENEO_API_KEY }}
+          SECRET: 0a4699c6-3a08-4f77-9349-bf418c9c8443
           AUTO_PUBLISH: true
           IMPORT_OPTION: merge
           PARAMETER_DESCRIPTION_MERGE_STRATEGY: keep_new
